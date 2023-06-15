@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    /* font-size: 16px; */
+}
+body {
+    background-color: hsl(204, 43%, 93%);
+    padding-top: 50px;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    box-shadow: 1px 1px 20px hsl(204, 43%, 93%);
+}
+.box {
+    padding: 30px;
+}
+.first_block {
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.first_block h2 {
+    margin-block: 20px;
+    color: hsl(179, 62%, 43%);
+}
+.first_block h3 {
+    color: hsl(71, 73%, 54%);
+    line-height: 1.5;
+}
+.first_block p {
+    color: hsl(204, 43%, 53%);
+    opacity: 70%;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.second-block-left {
+    background-color:hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+    /* padding: 30px; */
+}
+.second-block-left h2 {
+    margin-block: 15px;
+    font-weight: lighter;
+}
+.second-block-left .amount-to-pay {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.second-block-left .amount-to-pay h3 {
+    font-weight: lighter;
+    font-size: 40px;
+}
+.second-block-left .amount-to-pay p {
+    color: hsl(204, 43%, 93%);
+    opacity: 60%;
+    font-size: 20px;
+}
+.second-block-left > p {
+    margin: 15px 0 30px;
+
+}
+.second-block-left a {
+    display: block;
+    text-decoration: none;
+    color: hsl(204, 43%, 93%);
+    background-color: hsl(71, 73%, 54%);
+    width: 100%;
+    text-align: center;
+    padding-block: 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    /* margin-top: 15px; */
+}
+.second-block-right {
+    background-color: hsl(179, 62%, 55%);
+    color: hsl(204, 43%, 93%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.second-block-right h2 {
+    margin-block: 20px;
+}
+.second-block-right p {
+    line-height: 1.6;
+    opacity: 70%;
+}
+/* DESKTOP VERSION */
+@media screen and (min-width: 900px) {
+    .container {
+        max-width: 1440px;
+    }
+    .second-row {
+        display: flex;
+        width: 100%;
+    }
+    .second-block-left {
+        width: 100%;
+    }
+    .second-block-right {
+        width: 100%;
+    }
+}
